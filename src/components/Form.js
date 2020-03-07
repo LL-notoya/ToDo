@@ -38,13 +38,13 @@ const FormWrapper = styled.form`
 
 
 const Form = () => {
+
     return (
-        <form>
-            <FormWrapper>
-                <input type="text" placeholder="今日は何するの？" />
-                <button type="button">追加</button>
-            </FormWrapper>
-        </form>
+
+        <FormWrapper>
+            <input type="text" placeholder="今日は何するの？" />
+            <button type="button">追加</button>
+        </FormWrapper>
     )
 }
 

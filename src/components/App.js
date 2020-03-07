@@ -4,7 +4,7 @@ import reset from "styled-reset"
 
 import Form from "./Form"
 import List from "./List"
-// import "../styles/App.css"
+
 
 const AppWrapper = styled.div`
     text-align: center;
@@ -25,6 +25,7 @@ const GlodalStyle = createGlobalStyle`
 `
 
 const App = () => {
+
     const todoItems = [
         { id: 1, content: "朝起きて" },
         { id: 2, content: "昼寝して" },

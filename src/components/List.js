@@ -14,14 +14,12 @@ const List = (props) => {
     return (
 
         <ListWrapper>
-            <ul>
-                {props.todoItems.map((todo) =>
-                    <Item
-                        todo={todo}
-                        key={todo.id}
-                    />
-                )}
-            </ul>
+            {props.todoItems.map((todo) =>
+                <Item
+                    todo={todo}
+                    key={todo.id}
+                />
+            )}
         </ListWrapper>
     )
 }
