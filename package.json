@@ -15,7 +15,6 @@
     "styled-components": "^5.0.1",
     "styled-reset": "^4.1.0"
   },
-  "homepage": "https://ll-notoya.github.io/ToDo/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -24,6 +23,7 @@
     "preghpages": "yarn build",
     "ghpages": "gh-pages -d build"
   },
+  "homepage": "https://ll-notoya.github.io/ToDo/",
   "eslintConfig": {
     "extends": "react-app"
   },
