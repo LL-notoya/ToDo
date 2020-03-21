@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import axios from "axios"
