@@ -40,7 +40,7 @@ const Form = (props) => {
         <>
             <FormWrapper>
                 <Input inputProps={{ 'aria-label': 'description' }} type="text" placeholder="今日は何する？" />
-                <Button color="disabled" type="submit" onClick={(e) => handleClick(e)}>追加</Button>
+                <Button type="submit" onClick={(e) => handleClick(e)}>追加</Button>
             </FormWrapper>
         </>
     )

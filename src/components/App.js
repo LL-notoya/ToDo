@@ -83,7 +83,7 @@ const App = () => {
             setTodos(newTodos)
         })
 
-        console.log(newTodo)
+        // console.log(newTodo)
         //新しいtodoオブジェクトList追加
         setTodos(todos.concat(newTodo)) //セット 書き換えている(concat = 一度消去してから書き換える)
     }
@@ -160,7 +160,7 @@ const App = () => {
             return todos
         }
     }
-    console.log(FilterCheckTodo());
+    // console.log(FilterCheckTodo());
 
 
 　return (

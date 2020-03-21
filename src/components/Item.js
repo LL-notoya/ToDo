@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import Timer from './Timer'
+
 import Button from "@material-ui/core/Button"
 import IconButton from "@material-ui/core/IconButton"
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -103,6 +105,7 @@ const Item = (props) => {
     return (
         <>
             <ItemWrapper>
+                {props.todo.isDone ? null : <Timer id={props.id} />} {/* isDoneがfalse = 完了していない時にTimerコンポを表示 */}
                 {contentText()}
                 <Button
                     variant="contained"
