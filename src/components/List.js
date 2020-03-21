@@ -12,18 +12,21 @@ const ListWrapper = styled.ul`
 const List = (props) => {
 
     return (
-
-        <ListWrapper>
-            {props.todos.map((todo) =>
-                <Item
-                    todo={todo}
-                    key={todo.id}
-                    id={todo.id}
-                    deleteTodo={props.deleteTodo}
-                />
-            )}
-        </ListWrapper>
-    )
+      <ListWrapper>
+        {props.todos.map((todo) => (
+          <Item
+            todo={todo}
+            key={todo.id}
+            id={todo.id}
+            isDone={todo.isDone}
+            content={todo.content}
+            deleteTodo={props.deleteTodo}
+            toggleIsDone={props.toggleIsDone}
+            updateTodo={props.updateTodo}
+          />
+        ))}
+      </ListWrapper>
+    );
 }
 
 export default List

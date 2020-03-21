@@ -18,30 +18,31 @@ const FormWrapper = styled.form`
     }
     button {
         margin-left: 10px;
-        font-weight: bold;
-
     }
 `
+
 
 
 const Form = (props) => {
     const handleClick = (e) => {// e → clickされたら動く
         e.preventDefault()//タグの挙動を止める submit=リロード抑止
-        let inputValue = document.getElementsByTagName('input')[0].value
-        if (inputValue.length === 0) {
+        let input = document.getElementsByTagName('input')[0]
+
+        if (input.value.length === 0) {
             return null
         } else {
-            props.addTodo(inputValue)//直接入力した値
-            inputValue =  "" //追加　　入力完了した文字を消す(初期化)
+            props.addTodo(input.value)//直接入力した値
+            input.value =  "" //追加　　入力完了した文字を消す(初期化)
         }
     }
 
     return (
-
-        <FormWrapper>
-            <Input inputProps={{ 'aria-label': 'description' }} type="text" placeholder="今日は何するの？" />
-            <Button color="disabled" type="submit" onClick={(e) => handleClick(e)}>追加</Button>
-        </FormWrapper>
+        <>
+            <FormWrapper>
+                <Input inputProps={{ 'aria-label': 'description' }} type="text" placeholder="今日は何する？" />
+                <Button color="disabled" type="submit" onClick={(e) => handleClick(e)}>追加</Button>
+            </FormWrapper>
+        </>
     )
 }
 
