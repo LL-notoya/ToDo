@@ -117,7 +117,7 @@ const Item = props => {
           variant="contained"
           color={props.isDone ? 'secondary' : 'default'}
           style={{
-            display: isEdit ? 'none' : <Timer id={props.id} />,
+            display: isEdit ? 'none' : 'block',
             fontSize: 14,
             marginTop: 7
           }} //isEdit編集がtrueで消えるfalseで表示
