@@ -12,6 +12,7 @@
     "gh-pages": "^2.2.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-hook-form": "^5.1.3",
     "react-scripts": "3.4.0",
     "styled-components": "^5.0.1",
     "styled-reset": "^4.1.0"
@@ -24,7 +25,8 @@
     "preghpages": "yarn build",
     "ghpages": "gh-pages -d build"
   },
-  "homepage": "https://ll-notoya.github.io/ToDo/",
+  "homepage": "./",
+  "proxy": "http://localhost:3001/",
   "eslintConfig": {
     "extends": "react-app"
   },

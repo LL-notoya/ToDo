@@ -5,7 +5,7 @@ import Item from "./Item"
 
 
 const ListWrapper = styled.ul`
-    width: 550px;
+    width: 700px;
     margin: 30px auto;
 `
 
